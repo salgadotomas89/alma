@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "alma/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "alma/wsgi.py"
+      }
+    ]
+  }
